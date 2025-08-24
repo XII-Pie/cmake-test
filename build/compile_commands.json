@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/yu/work/cmake-test/build/src",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/main.cpp.o -c /home/yu/work/cmake-test/src/main.cpp",
+  "file": "/home/yu/work/cmake-test/src/main.cpp"
+}
+]
