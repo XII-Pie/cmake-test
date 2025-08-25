@@ -7,3 +7,4 @@ project(hi CXX)
 # set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_INSTALL_PREFIX}/bin)
 
 add_subdirectory(src ../install)
+
