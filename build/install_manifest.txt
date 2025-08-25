@@ -1,0 +1,2 @@
+/home/yu/work/cmake-test/install_tmp/lib/liblib1.a
+/home/yu/work/cmake-test/install_tmp/include/lib1.h

@@ -12,6 +12,7 @@
 		"commands" : 
 		[
 			"add_library",
+			"install",
 			"include_directories",
 			"target_include_directories"
 		],
@@ -32,16 +33,22 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
 				"file" : 1
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 1,
 				"line" : 1,
-				"parent" : 2
+				"parent" : 3
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
 				"line" : 4,
 				"parent" : 0
@@ -60,11 +67,11 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/yu/work/cmake-test/src/."
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/yu/work/cmake-test/src/lib1/."
 				}
 			],
@@ -76,6 +83,20 @@
 		}
 	],
 	"id" : "lib1::@a3d5d57b9d921c60a154",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/yu/work/cmake-test/install_tmp"
+		}
+	},
 	"name" : "lib1",
 	"nameOnDisk" : "liblib1.a",
 	"paths" : 

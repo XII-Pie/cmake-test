@@ -10,6 +10,7 @@
 					[
 						1
 					],
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -23,6 +24,7 @@
 					[
 						2
 					],
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -37,6 +39,7 @@
 				},
 				{
 					"build" : "/home/yu/work/cmake-test/install/lib1",
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -73,7 +76,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "lib1::@a3d5d57b9d921c60a154",
-					"jsonFile" : "target-lib1-Debug-9277c68d14904674e0cb.json",
+					"jsonFile" : "target-lib1-Debug-b5111a6df5434133666d.json",
 					"name" : "lib1",
 					"projectIndex" : 0
 				},

@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local"
+			"value" : "/home/yu/work/cmake-test/install_tmp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_SO_NO_EXE",
