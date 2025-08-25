@@ -1,7 +1,12 @@
 [
 {
-  "directory": "/home/yu/work/cmake-test/build/src",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/main.cpp.o -c /home/yu/work/cmake-test/src/main.cpp",
+  "directory": "/home/yu/work/cmake-test/install",
+  "command": "/usr/bin/g++   -I/home/yu/work/cmake-test/src/. -I/home/yu/work/cmake-test/src/lib1/.  -g   -o CMakeFiles/main.dir/main.cpp.o -c /home/yu/work/cmake-test/src/main.cpp",
   "file": "/home/yu/work/cmake-test/src/main.cpp"
+},
+{
+  "directory": "/home/yu/work/cmake-test/install/lib1",
+  "command": "/usr/bin/g++   -I/home/yu/work/cmake-test/src/. -I/home/yu/work/cmake-test/src/lib1/.  -g   -o CMakeFiles/lib1.dir/lib1.cc.o -c /home/yu/work/cmake-test/src/lib1/lib1.cc",
+  "file": "/home/yu/work/cmake-test/src/lib1/lib1.cc"
 }
 ]

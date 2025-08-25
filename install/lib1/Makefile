@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles /home/yu/work/cmake-test/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/yu/work/cmake-test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles /home/yu/work/cmake-test/install/lib1/CMakeFiles/progress.marks
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f CMakeFiles/Makefile2 ../install/lib1/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f CMakeFiles/Makefile2 ../install/lib1/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f CMakeFiles/Makefile2 ../install/lib1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f CMakeFiles/Makefile2 ../install/lib1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yu/work/cmake-test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named main
+# Convenience name for target.
+../install/lib1/CMakeFiles/lib1.dir/rule:
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f CMakeFiles/Makefile2 ../install/lib1/CMakeFiles/lib1.dir/rule
+.PHONY : ../install/lib1/CMakeFiles/lib1.dir/rule
 
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+# Convenience name for target.
+lib1: ../install/lib1/CMakeFiles/lib1.dir/rule
 
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f ../install/CMakeFiles/main.dir/build.make ../install/CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named lib1
-
-# Build rule for target.
-lib1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lib1
 .PHONY : lib1
 
 # fast build rule for target.
 lib1/fast:
-	$(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/build
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/build
 .PHONY : lib1/fast
+
+lib1.o: lib1.cc.o
+
+.PHONY : lib1.o
+
+# target to build an object file
+lib1.cc.o:
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/lib1.cc.o
+.PHONY : lib1.cc.o
+
+lib1.i: lib1.cc.i
+
+.PHONY : lib1.i
+
+# target to preprocess a source file
+lib1.cc.i:
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/lib1.cc.i
+.PHONY : lib1.cc.i
+
+lib1.s: lib1.cc.s
+
+.PHONY : lib1.s
+
+# target to generate assembly for a file
+lib1.cc.s:
+	cd /home/yu/work/cmake-test/build && $(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/lib1.cc.s
+.PHONY : lib1.cc.s
 
 # Help Target
 help:
@@ -144,8 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
 	@echo "... lib1"
+	@echo "... lib1.o"
+	@echo "... lib1.i"
+	@echo "... lib1.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yu/work/cmake-test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

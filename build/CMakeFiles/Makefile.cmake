@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
+  "../src/lib1/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
@@ -38,10 +39,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "../install/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "../install/lib1/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/main.dir/DependInfo.cmake"
+  "../install/CMakeFiles/main.dir/DependInfo.cmake"
+  "../install/lib1/CMakeFiles/lib1.dir/DependInfo.cmake"
   )

@@ -53,64 +53,111 @@ CMAKE_BINARY_DIR = /home/yu/work/cmake-test/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: src/all
+all: ../install/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/preinstall
+preinstall: ../install/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: src/clean
+clean: ../install/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src
+# Directory level rules for directory ../install
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/main.dir/all
+../install/all: ../install/CMakeFiles/main.dir/all
+../install/all: ../install/lib1/all
 
-.PHONY : src/all
+.PHONY : ../install/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+../install/preinstall: ../install/lib1/preinstall
 
-.PHONY : src/preinstall
+.PHONY : ../install/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/main.dir/clean
+../install/clean: ../install/CMakeFiles/main.dir/clean
+../install/clean: ../install/lib1/clean
 
-.PHONY : src/clean
+.PHONY : ../install/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/main.dir
+# Directory level rules for directory ../install/lib1
+
+# Recursive "all" directory target.
+../install/lib1/all: ../install/lib1/CMakeFiles/lib1.dir/all
+
+.PHONY : ../install/lib1/all
+
+# Recursive "preinstall" directory target.
+../install/lib1/preinstall:
+
+.PHONY : ../install/lib1/preinstall
+
+# Recursive "clean" directory target.
+../install/lib1/clean: ../install/lib1/CMakeFiles/lib1.dir/clean
+
+.PHONY : ../install/lib1/clean
+
+#=============================================================================
+# Target rules for target ../install/CMakeFiles/main.dir
 
 # All Build rule for target.
-src/CMakeFiles/main.dir/all:
-	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
-	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yu/work/cmake-test/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : src/CMakeFiles/main.dir/all
+../install/CMakeFiles/main.dir/all: ../install/lib1/CMakeFiles/lib1.dir/all
+	$(MAKE) -f ../install/CMakeFiles/main.dir/build.make ../install/CMakeFiles/main.dir/depend
+	$(MAKE) -f ../install/CMakeFiles/main.dir/build.make ../install/CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yu/work/cmake-test/build/CMakeFiles --progress-num=3,4 "Built target main"
+.PHONY : ../install/CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/all
+../install/CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 ../install/CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/main.dir/rule
+.PHONY : ../install/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-main: src/CMakeFiles/main.dir/rule
+main: ../install/CMakeFiles/main.dir/rule
 
 .PHONY : main
 
 # clean rule for target.
-src/CMakeFiles/main.dir/clean:
-	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/clean
-.PHONY : src/CMakeFiles/main.dir/clean
+../install/CMakeFiles/main.dir/clean:
+	$(MAKE) -f ../install/CMakeFiles/main.dir/build.make ../install/CMakeFiles/main.dir/clean
+.PHONY : ../install/CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target ../install/lib1/CMakeFiles/lib1.dir
+
+# All Build rule for target.
+../install/lib1/CMakeFiles/lib1.dir/all:
+	$(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/depend
+	$(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yu/work/cmake-test/build/CMakeFiles --progress-num=1,2 "Built target lib1"
+.PHONY : ../install/lib1/CMakeFiles/lib1.dir/all
+
+# Build rule for subdir invocation for target.
+../install/lib1/CMakeFiles/lib1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ../install/lib1/CMakeFiles/lib1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yu/work/cmake-test/build/CMakeFiles 0
+.PHONY : ../install/lib1/CMakeFiles/lib1.dir/rule
+
+# Convenience name for target.
+lib1: ../install/lib1/CMakeFiles/lib1.dir/rule
+
+.PHONY : lib1
+
+# clean rule for target.
+../install/lib1/CMakeFiles/lib1.dir/clean:
+	$(MAKE) -f ../install/lib1/CMakeFiles/lib1.dir/build.make ../install/lib1/CMakeFiles/lib1.dir/clean
+.PHONY : ../install/lib1/CMakeFiles/lib1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,5 +1,8 @@
 /home/yu/work/cmake-test/build/CMakeFiles/rebuild_cache.dir
 /home/yu/work/cmake-test/build/CMakeFiles/edit_cache.dir
-/home/yu/work/cmake-test/build/src/CMakeFiles/rebuild_cache.dir
-/home/yu/work/cmake-test/build/src/CMakeFiles/edit_cache.dir
-/home/yu/work/cmake-test/build/src/CMakeFiles/main.dir
+/home/yu/work/cmake-test/install/CMakeFiles/rebuild_cache.dir
+/home/yu/work/cmake-test/install/CMakeFiles/edit_cache.dir
+/home/yu/work/cmake-test/install/CMakeFiles/main.dir
+/home/yu/work/cmake-test/install/lib1/CMakeFiles/rebuild_cache.dir
+/home/yu/work/cmake-test/install/lib1/CMakeFiles/edit_cache.dir
+/home/yu/work/cmake-test/install/lib1/CMakeFiles/lib1.dir
